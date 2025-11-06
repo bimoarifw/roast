@@ -1,6 +1,11 @@
 # RoastMaster AI
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green.svg)
+![Redis](https://img.shields.io/badge/Redis-DC382D.svg)
+![Docker](https://img.shields.io/badge/Docker-2496ED.svg)
+![Celery](https://img.shields.io/badge/Celery-37814A.svg)
 
 An extremely vulgar AI-powered roast generator that delivers brutally honest, sadistic insults. Enter any name and get verbally demolished by cutting-edge AI technology using the "evil" model.
 
@@ -14,6 +19,8 @@ Look, this ain't your grandma's polite AI. This thing spits out roasts so nasty 
 ## Live Demo
 
 Visit [roast.bimoarifw.me](https://roast.bimoarifw.me) to try it out!
+
+**API Documentation**: [roast.bimoarifw.me/docs](https://roast.bimoarifw.me/docs)
 
 ## Installation
 
