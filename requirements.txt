@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+gunicorn
+jinja2
+python-dotenv
+redis
+celery
+httpx
+pydantic

@@ -1,0 +1,33 @@
+services:
+  redis:
+    image: "redis:alpine"
+    container_name: roast-redis
+    ports:
+      - "6380:6379"
+    volumes:
+      - redis_data:/data
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.app
+    container_name: roast-app
+    ports:
+      - "127.0.0.1:8787:8787"
+    depends_on:
+      - redis
+    env_file:
+      - .env
+
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.worker
+    container_name: roast-worker
+    depends_on:
+      - redis
+    env_file:
+      - .env
+
+volumes:
+  redis_data:
